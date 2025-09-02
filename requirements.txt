@@ -1,0 +1,4 @@
+virtualenv
+flask
+flask-cors 
+cx_Oracle # for interacting with Oracle DB
