@@ -15,7 +15,7 @@ def chat():
 def home():
     return jsonify({"response": "Connected successfully!"})
 
-@app.route("upload", methods=["POST"])
+@app.route("/upload", methods=["POST"])
 def upload_file():
     if 'file' not in request.files:
         return jsonify({"error": "No file part"}), 400
